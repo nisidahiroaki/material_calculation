@@ -1,5 +1,24 @@
 # README
 
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name    |string|null: false|
+|email   |string|null: false|
+|password|string|null: false|
+### Association
+- has_many :items
+
+
+## itemsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|width    |integer|null: false|
+|height   |integer|null: false|
+|thickness|integer|null: false|
+### Association
+- belongs_to :user
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
