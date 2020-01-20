@@ -13,9 +13,11 @@
 ## itemsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|width    |integer|null: false|
-|height   |integer|null: false|
-|thickness|integer|null: false|
+|itemname             |string|null: false|
+|itemproductioncompany|string|null: false|
+|width                |integer|null: false|
+|height               |integer|null: false|
+|thickness            |integer|null: false|
 ### Association
 - belongs_to :user
 
