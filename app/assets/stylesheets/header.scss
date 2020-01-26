@@ -1,0 +1,41 @@
+body{
+  background-color: #f6f6f6;
+  min-width: 650px;
+  width: 100%;
+
+  .header{
+    height: 60px;
+    // width: 100%;
+    padding: 0 150px;
+    background-color: #00bfff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    &__title{
+      font-size: 30px;
+      line-height: 56px;
+
+      &__text{
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    &__right{
+
+      &__register{
+        text-decoration: none;
+        line-height: 56px;
+        color: #fff;
+        margin-left:15px;
+      }
+    }
+  }
+  .content{
+    margin: 30px auto 0;
+    background-color: #fff;
+    height: 600px;
+    width: 70%;
+    overflow: scroll;
+  }
+}
