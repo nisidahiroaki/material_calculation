@@ -3,7 +3,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
     create_table :items do |t|
 
       t.string :itemname
-      t.reference :user
+      # t.reference :user
       t.string :itemproductioncompany
       t.integer :width  
       t.integer :height
