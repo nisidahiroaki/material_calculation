@@ -31,10 +31,11 @@ body{
       }
     }
   }
-  .content{
+  .contents{
     margin: 30px auto 0;
     background-color: #fff;
-    height: 600px;
+    min-height: 600px;
+    height: 100%;
     width: 70%;
     overflow: scroll;
   }

@@ -1,0 +1,33 @@
+<div class="content__title">
+  PPシートの登録
+</div>
+
+<%= form_with model: @item, class: :newitem, local: true do |form| %>
+  <div class="newitem__itemproductioncompany">
+    ■メーカー名
+  </div>
+  <%= form.text_field :itemproductioncompany, placeholder: :メーカー名を入力して下さい, class: :newitem_form__itemproductioncompany %>
+  <div class="newitem__itemname">
+    ■商品名
+  </div>
+  <%= form.text_field :itemname, placeholder: :商品名を入力して下さい, class: :newitem_form__itemname %>
+  <div class="newitem__width">
+    ■生地のW寸法を入力して下さい。(単位：mm)
+  </div>
+  <%= form.text_field :width, placeholder: :W寸法を入力して下さい, class: :newitem_form__width %>
+    
+  <div class="newitem__height">
+    ■生地のH寸法を入力して下さい。(単位：mm)
+  </div>
+  <%= form.text_field :height, placeholder: :H寸法を入力して下さい, class: :newitem_form__height %>
+    
+  <div class="newirem__thickness">
+    ■生地の厚みを入力して下さい。(単位：mm)
+  </div>
+  <%= form.text_field :thickness, placeholder: :厚みを入力して下さい, class: :newitem_form__thickness %>
+    
+  
+
+  <%= form.submit '登録する', class: :newitem_form__btn %>
+  <%= link_to "トップページへ", root_path, class: :newitem__back%>
+<% end %>
