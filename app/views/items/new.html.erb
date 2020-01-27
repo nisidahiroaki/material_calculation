@@ -14,17 +14,17 @@
   <div class="newitem__width">
     ■生地のW寸法を入力して下さい。(単位：mm)
   </div>
-  <%= form.text_field :width, placeholder: :W寸法を入力して下さい, class: :newitem_form__width %>
+  <%= form.number_field :width, placeholder: :W寸法を入力して下さい, class: :newitem_form__width %>
     
   <div class="newitem__height">
     ■生地のH寸法を入力して下さい。(単位：mm)
   </div>
-  <%= form.text_field :height, placeholder: :H寸法を入力して下さい, class: :newitem_form__height %>
+  <%= form.number_field :height, placeholder: :H寸法を入力して下さい, class: :newitem_form__height %>
     
   <div class="newirem__thickness">
     ■生地の厚みを入力して下さい。(単位：mm)
   </div>
-  <%= form.text_field :thickness, placeholder: :厚みを入力して下さい, class: :newitem_form__thickness %>
+  <%= form.number_field :thickness, placeholder: :厚みを入力して下さい, step: "0.1", class: :newitem_form__thickness %>
     
   
 

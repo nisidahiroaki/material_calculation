@@ -10,8 +10,12 @@ class ItemsController < ApplicationController
 
   def create
     Item.create(item_params)
+    redirect_to root_path
+    # controller: "items", action:"show"   ⬅︎13行目のパスをこれにしたい。
   end
 
+  def show
+  end
 
 
   private
