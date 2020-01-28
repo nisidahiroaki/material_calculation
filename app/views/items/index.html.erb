@@ -11,14 +11,13 @@
       <tr>
         <td>
         <div class="content__itemproductioncompany">
-        <%= link_to '#'%>
           <%= item.itemproductioncompany %>
         
         </div>
         </td>
         <td>
         <div class="content__itemname">
-          <%= item.itemname %>
+          <%= link_to item.itemname, item_path(item.id), class: "content__itemname__link" %>
         </div>
         </td>
         <td>
