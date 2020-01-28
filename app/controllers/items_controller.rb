@@ -28,6 +28,12 @@ class ItemsController < ApplicationController
     redirect_to item_path
   end
 
+  def destroy
+    item = Item.find(params[:id])
+    item.destroy
+    redirect_to root_path
+  end
+
   private
   def item_params
     params.require(:item).permit(:itemproductioncompany, :itemname, :width, :height, :thickness)

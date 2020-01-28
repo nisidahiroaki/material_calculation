@@ -5,10 +5,32 @@
   text-align: center;
 }
 
-.show__edit{
+.show__link{
   font-size: 20px;
   padding-top: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.show__link__edit{
+  display: block;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color:#0a8eaf;
+  padding: 0 10px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.show__link__destroy{
+  display: block;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color:#0a8eaf;
+  padding: 0 10px;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 .show__content{
