@@ -1,4 +1,10 @@
 <div class="show__top">
+  シート情報
+</div>
+<div class="show__edit">
+  <%= link_to "シート情報の編集", edit_item_path(@item.id), class: "show__edit__link" %>
+</div>
+<div class="show__content">
   <table border="1", >
     <tr>
       <th>商品名</th><th>width寸法</th><th>height寸法</th><th>厚み</th><th>メーカー</th>
