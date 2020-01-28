@@ -1,25 +1,36 @@
-<div class="itemItemproductioncompany">
-  <%= @item.itemproductioncompany %>
-</div>
-<div class="itemItemname">
-  <%= @item.itemname %>
-</div>
-<div class="itemWidth">
-  <%= @item.width %>
-</div>
-<div class="itemHeight">
-  <%= @item.height %>
-</div>
-<div class="itemThickness">
-  <%= @item.thickness%>
-</div>
+<div class="show__top">
+  <table border="1", >
+    <tr>
+      <th>商品名</th><th>width寸法</th><th>height寸法</th><th>厚み</th><th>メーカー</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="itemItemname">
+          <%= @item.itemname %>
+        </div>
+      </td>
+      <td>
+        <div class="itemWidth">
+          <%= @item.width %>
+        </div>
+      </td>
+      <td>
+        <div class="itemHeight">
+          <%= @item.height %>
+        </div>
+      </td>
+      <td>
+        <div class="itemThickness">
+          <%= @item.thickness%>
+        </div>
+      </td>
+      <td>
+        <div class="itemItemproductioncompany">
+          <%= @item.itemproductioncompany %>
+        </div>
+      </td>
 
 
 
 
 
-<%# <div class="create"> %>
-  <%# <%= form_with model: @item, class: :createitem, local: true do |form| %> %>
-      <%# <%= form.submit 'トップページに戻る', root_path,class: :createitem_form__btn %> %>
-  <%# <% end %> %>
-<%# </div> %>
