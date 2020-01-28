@@ -1,0 +1,33 @@
+<div class="content__title">
+  登録済のPPシートの編集
+</div>
+
+<%= form_with model: @item, class: :edititem, local: true do |form| %>
+  <div class="edititem__itemproductioncompany">
+    ■メーカー名
+  </div>
+  <%= form.text_field :itemproductioncompany, placeholder: :メーカー名を入力して下さい, class: :edititem_form__itemproductioncompany %>
+  <div class="edititem__itemname">
+    ■商品名
+  </div>
+  <%= form.text_field :itemname, placeholder: :商品名を入力して下さい, class: :edititem_form__itemname %>
+  <div class="edititem__width">
+    ■生地のW寸法を入力して下さい。(単位：mm)
+  </div>
+  <%= form.number_field :width, placeholder: :W寸法を入力して下さい, class: :edititem_form__width %>
+    
+  <div class="edititem__height">
+    ■生地のH寸法を入力して下さい。(単位：mm)
+  </div>
+  <%= form.number_field :height, placeholder: :H寸法を入力して下さい, class: :edititem_form__height %>
+    
+  <div class="editirem__thickness">
+    ■生地の厚みを入力して下さい。(単位：mm)
+  </div>
+  <%= form.number_field :thickness, placeholder: :厚みを入力して下さい, step: "0.01", class: :edititem_form__thickness %>
+    
+  
+
+  <%= form.submit '登録する', class: :edititem_form__btn %>
+  <%= link_to "トップページへ", root_path, class: :edititem__back%>
+<% end %>
