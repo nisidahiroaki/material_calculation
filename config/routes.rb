@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   resources :items, only: [:new, :create, :show]
 
+  get 'registered', to: 'items#registered'
+
 end

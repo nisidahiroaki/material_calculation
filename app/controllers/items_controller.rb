@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
 
   def create
     Item.create(item_params)
-    redirect_to root_path
+    redirect_to registered_path
     # controller: "items", action:"show"   ⬅︎13行目のパスをこれにしたい。
   end
 
@@ -20,7 +20,7 @@ class ItemsController < ApplicationController
 
   private
   def item_params
-    params.require(:item).permit(:itemproductioncompany, :itemname)
+    params.require(:item).permit(:itemproductioncompany, :itemname, :width, :height, :thickness)
   end
 
 end

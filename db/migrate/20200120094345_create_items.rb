@@ -7,7 +7,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :itemproductioncompany
       t.integer :width  
       t.integer :height
-      t.integer :thickness
+      t.float :thickness
       t.timestamps
     end
   end

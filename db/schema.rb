@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_01_20_094345) do
     t.string "itemproductioncompany"
     t.integer "width"
     t.integer "height"
-    t.integer "thickness"
+    t.float "thickness"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

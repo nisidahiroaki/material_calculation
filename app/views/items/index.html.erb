@@ -1,10 +1,42 @@
-<%# <% @items.each do |item| %>
-  <%# <dic class="content"> %>
-    <%# <div class="content__itemproductioncompany"> %>
-      <%# <%= item.itemproductioncompany %> %>
-    <%# <div class="content__itemname"> %>
-      <%# <%= item.itemname %> %>
-    <%# <div class="content__width"> %>
-      <%# <%= item.width %> %>
-    <%# <div class="content__height"> %>
-      <%# <%= item.height %> %> %>
+<div class="content__title">
+  登録した生地一覧
+</div>
+
+<div class="content">
+  <% @items.each do |item| %> 
+    <table border="1", >
+      <tr>
+        <th>メーカー</th><th>商品名</th><th>width寸法</th><th>height寸法</th><th>厚み</th>
+      </tr>
+      <tr>
+        <td>
+        <div class="content__itemproductioncompany">
+        <%= link_to '#'%>
+          <%= item.itemproductioncompany %>
+        
+        </div>
+        </td>
+        <td>
+        <div class="content__itemname">
+          <%= item.itemname %>
+        </div>
+        </td>
+        <td>
+        <div class="content__width">
+          <%= item.width %>
+        </div>
+        </td>
+        <td>
+        <div class="content__height">
+          <%= item.height %> 
+        </div>
+        </td>
+        <td>
+        <div class="content__thickness">
+          <%= item.thickness %>
+        </div>
+        </td>
+      </tr>
+    </table>
+  <% end %>
+</div>
