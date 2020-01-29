@@ -1,0 +1,101 @@
+// アカウント登録ページのcss
+.account-page__content {
+  width: 980px;
+  margin: 60px auto;
+  padding: 60px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+}
+
+.account-page__content__left {
+  width: 50%;
+}
+h2 {
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+h4 {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.login-btn {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #ccc;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.account-page__content__right {
+  width: 50%;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+label {
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 200;
+  width: 100%;
+  
+}
+
+input{
+  padding: 10px;
+  letter-spacing: 1px;
+  width: 100%;
+  margin: 10px;
+}
+
+.actions{
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+}
+
+
+// ログインページのcss
+.login-page__content {
+  width: 980px;
+  margin: 60px auto;
+  padding: 60px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+}
+
+.login-page__content__left {
+  width: 50%;
+}
+
+.signup-btn {
+  margin-top: 50px;
+  color: #fff;
+  background-color: #ccc;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.login-page__content__right {
+  width: 50%;
+}
