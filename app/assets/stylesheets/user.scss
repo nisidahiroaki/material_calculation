@@ -85,6 +85,9 @@ input{
 .login-page__content__left {
   width: 50%;
 }
+.login-page__content__left__inner{
+  margin: 50px 0;
+}
 
 .signup-btn {
   margin-top: 50px;
@@ -96,6 +99,10 @@ input{
   padding: 10px;
 }
 
+.Forgot{
+  margin-top: 120px;
+  font-size: 20px;
+}
 .forgot-pass{
   margin-top: 50px;
 }

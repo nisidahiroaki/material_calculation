@@ -2,7 +2,9 @@
   <div class="login-page__content">
     <div class="login-page__content__left">
       <h2>Log in</h2>
-      <%= render "devise/shared/links" %>
+      <div class="login-page__content__left__inner">
+        <%= render "devise/shared/links" %>
+      </div>
     </div>
     <div class="login-page__content__right">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
