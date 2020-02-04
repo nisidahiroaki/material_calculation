@@ -1,0 +1,42 @@
+<div class="user-title">
+  <%= @user.name %>さんの投稿一覧
+</div>
+
+
+<% @items.each do |item| %>
+  <div class="user-show__content">
+    <table border="2" >
+      <tr>
+        <th width="31%">商品名</th><th width="13%">width寸法</th><th width="13%">height寸法</th><th width="13%">厚み</th><th width="30%">メーカー</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="itemItemname">
+            <%= link_to item.itemname, item_path(item.id) %>
+          </div>
+        </td>
+        <td>
+          <div class="itemWidth">
+            <%= item.width %>
+          </div>
+        </td>
+        <td>
+          <div class="itemHeight">
+            <%= item.height %>
+          </div>
+        </td>
+        <td>
+          <div class="itemThickness">
+            <%= item.thickness%>
+          </div>
+        </td>
+        <td>
+          <div class="itemItemproductioncompany">
+            <%= item.itemproductioncompany %>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+<% end %>
+

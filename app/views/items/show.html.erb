@@ -1,15 +1,17 @@
 <div class="show__top">
   シート情報
 </div>
+<% if user_signed_in? && current_user.id == @item.user_id %>
 <div class="show__link">
   <%= link_to "シート情報の編集", edit_item_path(@item.id), class: "show__link__edit" %>
   <%= link_to "シート情報の削除", item_path(@item.id), method: :delete, class: "show__link__destroy" %>
 </div>
+<% end %>
 
 <div class="show__content">
-  <table border="1", >
+  <table border="1" >
     <tr>
-      <th>商品名</th><th>width寸法</th><th>height寸法</th><th>厚み</th><th>メーカー</th>
+      <th width="31%">商品名</th><th width="13%">width寸法</th><th width="13%">height寸法</th><th width="13%">厚み</th><th width="30%">メーカー</th>
     </tr>
     <tr>
       <td>
@@ -37,6 +39,9 @@
           <%= @item.itemproductioncompany %>
         </div>
       </td>
+    </td>
+  </table>
+</div>
 
 
 
