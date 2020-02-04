@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
 
   def create
     Item.create(item_params)
-    redirect_to registered_path
+    # redirect_to registered_path
     # controller: "items", action:"show"   ⬅︎13行目のパスをこれにしたい。
   end
 
