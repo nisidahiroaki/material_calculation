@@ -1,41 +1,83 @@
-<div class="content__title">
-  登録した生地一覧
-</div>
-
-<div class="content">
-  <% @items.each do |item| %> 
-    <table border="1", >
-      <tr>
-        <th width="30%">メーカー</th><th width="31%">商品名</th><th width="13%">width寸法</th><th width="13%">height寸法</th><th width="13%">厚み</th>
-      </tr>
-      <tr>
-        <td>
-        <div class="content__itemproductioncompany">
-          <%= item.itemproductioncompany %>
-        
-        </div>
-        </td>
-        <td>
-        <div class="content__itemname">
-          <%= link_to item.itemname, item_path(item.id), class: "content__itemname__link" %>
-        </div>
-        </td>
-        <td>
-        <div class="content__width">
-          <%= item.width %>
-        </div>
-        </td>
-        <td>
-        <div class="content__height">
-          <%= item.height %> 
-        </div>
-        </td>
-        <td>
-        <div class="content__thickness">
-          <%= item.thickness %>
-        </div>
-        </td>
-      </tr>
-    </table>
+<div class="new-exiting">
+  <% if user_signed_in? %>
+    <div class="new-exiting__item">
+    計算に使用する生地の登録がまだの場合
+    <%= link_to "生地の登録", new_item_path, class: "new-exiting__item__link" %>
+    <div class="new-exiting__calculation">
+    計算に使用する生地の登録を行っている場合
+    <%= link_to "計算する", user_path(current_user), class: "new-exiting__calculation__link"%>
+  <% else %>
+    <div class="new-exiting__registration">
+    ユーザー登録がまだの方はこちら
+    <%= link_to "新規登録", new_user_registration_path, class: "new-exiting__registration__link" %>
+    <div class="new-exiting__login">
+    登録済の方はログインをお願いします。
+    <%= link_to "ログイン", new_user_session_path, class: "new-exiting__login__link" %>
   <% end %>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%# <div class="content__title"> %>
+  <%# 登録した生地一覧 %>
+<%# </div> %>
+
+<%# <div class="content"> %>
+  <%# <% @items.each do |item| %>  
+    <%# <table border="1", > %>
+      <%# <tr> %>
+        <%# <th width="30%">メーカー</th><th width="31%">商品名</th><th width="13%">width寸法</th><th width="13%">height寸法</th><th width="13%">厚み</th> %>
+      <%# </tr> %>
+      <%# <tr> %>
+        <%# <td> %>
+        <%# <div class="content__itemproductioncompany"> %>
+          <%# <%= item.itemproductioncompany %> 
+        
+        <%# </div> %>
+        <%# </td> %>
+        <%# <td> %>
+        <%# <div class="content__itemname"> %>
+          <%# <%= link_to item.itemname, item_path(item.id), class: "content__itemname__link" %> 
+        <%# </div> %>
+        <%# </td> %>
+        <%# <td> %>
+        <%# <div class="content__width"> %>
+          <%# <%= item.width %> 
+        <%# </div> %>
+        <%# </td> %>
+        <%# <td> %>
+        <%# <div class="content__height"> %>
+          <%# <%= item.height %>  
+        <%# </div> %>
+        <%# </td> %>
+        <%# <td> %>
+        <%# <div class="content__thickness"> %>
+          <%# <%= item.thickness %> 
+        <%# </div> %>
+        <%# </td> %>
+      <%# </tr> %>
+    <%# </table> %>
+  <%# <% end %> 
+<%# </div> %>
