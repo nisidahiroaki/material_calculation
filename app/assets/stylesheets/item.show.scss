@@ -51,17 +51,58 @@ tr {
 
 
 
-.id-01{
+
+.culuculation__text1{
   font-size: 20px;
   font-weight: bold;
   padding-top: 100px;
   text-align: center;
+  display: flex;
+  // width: 50%;
+  // padding-left: 10px;
+}
+
+.culuculation__width{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+
+.culuculation__text2{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
+  // width: 50%;
+}
+.culuculation__height{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.id-01{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 30px;
+  text-align: center;
+  display: flex;
 }
 
 .id-01__input{
-  width: 30%;
-  // display:block;
-  margin: 0 auto;
+  // width: 50%;
+  display: block;
+  margin: 0 40px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .id-02{
@@ -69,39 +110,17 @@ tr {
   font-weight: bold;
   padding-top: 30px;
   text-align: center;
+  display: flex;
 }
 
 .id-02__input{
-  width: 30%;
-  // display:block;
-  margin: 0 auto;
-}
-
-.id-03{
-  font-size: 20px;
-  font-weight: bold;
-  padding-top: 30px;
+  // width: 50%;
+  display: block;
+  margin: 0 40px;
   text-align: center;
-}
-
-.id-03__input{
-  width: 30%;
-  // display:block;
-  margin: 0 auto;
-}
-
-.id-04{
   font-size: 20px;
-  font-weight: bold;
-  padding-top: 30px;
-  text-align: center;
 }
 
-.id-04__input{
-  width: 30%;
-  // display:block;
-  margin: 0 auto;
-}
 
 .cut-value{
   width: 35%;

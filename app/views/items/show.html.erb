@@ -43,22 +43,43 @@
   </table>
 </div>
 
+<div class="culuculation">
+  <div class="culuculation__text1">
+    ■使用する生地のW寸法を入力して下さい   :
+      <%# <input type="text" id="id01" class="id-01__input"><br/>   ⬅︎参考にしたBMIのコード %>
 
-<div class="id-01">
-■使用する生地のW寸法を入力して下さい     :     <input type="text" id="id01" class="id-01__input"><br/>
-</div>
-<div class="id-02">
-■使用する生地のH寸法を入力して下さい    :    <input type="text" id="id02" class="id-02__input"><br/>
-</div>
-<div class="id-03">
-■取りたいサイズのW寸法を入力して下さい  :  <input type="text" id="id03" class="id-03__input"><br/>
-</div>
-<div class="id-04">
-■取りたいサイズのH寸法を入力して下さい  :  <input type="text" id="id04" class="id-04__input"><br/>
-</div>
-<div class="cut-value">
-<input type="button" value="計算する" class="cut-value" onclick="calcCut();">
-</div>
+    <div class="culuculation__width" >
+      <%= @item.width %> mm
+    </div>
+  </div>
 
-<div class="empty">
+  <div class="culuculation__text2">
+  ■使用する生地のH寸法を入力して下さい    :
+      <%# <input type="text" id="id02" class="id-02__input"><br/>   ⬅︎参考にしたBMIのコード %>
+
+    <div class="culuculation__height">
+      <%= @item.height %> mm
+    </div>
+  </div>
+
+  <div class="id-01">
+  ■取りたいサイズのW寸法を入力して下さい  :  
+    <div>
+    <input type="text" id="id01" class="id-01__input" placeholder="単位はmmで入力して下さい">
+    </div>
+  </div>
+  <div class="id-02">
+  ■取りたいサイズのH寸法を入力して下さい  :
+    <div>
+    <input type="text" id="id02" class="id-02__input" placeholder="単位はmmで入力して下さい">
+    </div>
+  </div>
+
+
+  <div class="cut-value">
+  <input type="button" value="計算する" class="cut-value" onclick="calcCut();">
+  </div>
+
+  <div class="empty">
+  </div>
 </div>

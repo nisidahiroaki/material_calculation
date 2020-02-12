@@ -16,6 +16,8 @@ class ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
+    gon.item_width = @item.width
+    gon.item_height = @item.height
     gon.all_variables
   end
 
