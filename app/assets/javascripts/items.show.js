@@ -14,6 +14,8 @@
 
     if(width2 <= width1 && height2 <= width1 && width2 <= height1 && height2 <= height1){
       var cut = (width1 * height1) / (width2 * height2);
+
+      
       alert("取れる枚数は" + cut + "です。");
     }else{
       // document.getElementById("id03").innerHTML = "クリックされた！";
@@ -22,3 +24,15 @@
 
   };
 // };
+
+
+
+
+// jqueryの場合のBMI表記
+// $(function() {
+  // $("#calc").click( function(){
+    // var h = Number($("#height").val());
+    // var w = Number($("#weight").val());
+    // alert( w / ( (h / 100) * (h / 100) ) );
+  // })
+// })
