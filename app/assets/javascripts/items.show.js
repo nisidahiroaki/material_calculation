@@ -13,9 +13,12 @@
     height2 = Number(height2);
 
     if(width2 <= width1 && height2 <= width1 && width2 <= height1 && height2 <= height1){
-      var cut = (width1 * height1) / (width2 * height2);
 
-      
+
+
+
+      var cut = Math.floor ((width1 * height1) / (width2 * height2));
+
       alert("取れる枚数は" + cut + "です。");
     }else{
       // document.getElementById("id03").innerHTML = "クリックされた！";
