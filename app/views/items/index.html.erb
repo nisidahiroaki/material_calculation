@@ -1,10 +1,10 @@
 <div class="new-exiting">
   <% if user_signed_in? %>
     <div class="new-exiting__item">
-    計算に使用する生地の登録がまだの場合
+    計算に使用するシートの登録がまだの場合
     <%= link_to "生地の登録", new_item_path, class: "new-exiting__item__link" %>
     <div class="new-exiting__calculation">
-    計算に使用する生地の登録を行っている場合
+    計算に使用するシートの登録を行っている場合
     <%= link_to "計算する", user_path(current_user), class: "new-exiting__calculation__link"%>
   <% else %>
     <div class="new-exiting__registration">

@@ -13,13 +13,15 @@
     height2 = Number(height2);
 
     if(width2 <= width1 && height2 <= width1 && width2 <= height1 && height2 <= height1){
-
-
-
-
-      var cut = Math.floor ((width1 * height1) / (width2 * height2));
-
-      alert("取れる枚数は" + cut + "です。");
+      var cut1 = (Math.floor (width1 / width2) * Math.floor(height1 / height2))
+      var cut2 = (Math.floor (width1 / height2) * Math.floor(height1 / width2))
+      if(cut1 < cut2){
+        alert("取れる枚数は" + cut2 + "です。");
+      }else{
+        alert("取れる枚数は" + cut1 + "です。");
+      };
+      // var cut = Math.floor ((width1 * height1) / (width2 * height2));
+      // alert("取れる枚数は" + cut + "です。");
     }else{
       // document.getElementById("id03").innerHTML = "クリックされた！";
       alert("選択した生地が小さくて取れません。");
