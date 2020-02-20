@@ -15,9 +15,10 @@
 |------|----|-------|
 |itemname             |string|null: false|計算に用いる生地名|
 |itemproductioncompany|string|null: false|計算に用いるメーカー名|
-|width                |integer|null: false|  ##計算に用いる生地の横方向の寸法
-|height               |integer|null: false|  計算に用いる生地の縦方向の寸法
-|thickness            |integer|null: false|  生地の厚み
+|width                |integer|null: false|  
+## 計算に用いる生地の横方向の寸法
+|height               |integer|null: false|  # 計算に用いる生地の縦方向の寸法
+|thickness            |integer|null: false|  ### 生地の厚み
 ### Association
 - belongs_to :user
 
