@@ -3,7 +3,7 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name    |string|null: false|
+|name    |string|null: false|  
 |email   |string|null: false|
 |password|string|null: false|
 ### Association
@@ -13,11 +13,11 @@
 ## itemsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|itemname             |string|null: false|
-|itemproductioncompany|string|null: false|
-|width                |integer|null: false|
-|height               |integer|null: false|
-|thickness            |integer|null: false|
+|itemname             |string|null: false|  計算に用いる生地名
+|itemproductioncompany|string|null: false|  計算に用いるメーカー名
+|width                |integer|null: false|  計算に用いる生地の横方向の寸法
+|height               |integer|null: false|  計算に用いる生地の縦方向の寸法
+|thickness            |integer|null: false|  生地の厚み
 ### Association
 - belongs_to :user
 
